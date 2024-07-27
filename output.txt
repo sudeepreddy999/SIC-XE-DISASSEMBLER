@@ -1,0 +1,8 @@
+       SUM     FIRST         0
+     FIRST       LDA #FIRST, X
+                 LDX        #1
+      LOOP      ADDR     #X ,A
+                 TIX       #11
+                 JLT      LOOP
+                RSUB          
+                 END     FIRST
